@@ -1,0 +1,21 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+anonymous.patonbulletin.list.label.moment=Moment
+anonymous.patonbulletin.list.label.author=Author
+anonymous.patonbulletin.list.label.description=Description
+anonymous.patonbulletin.list.label.text=Text
+
+anonymous.patonbulletin.form.label.author=Author
+anonymous.patonbulletin.form.label.description=Description
+anonymous.patonbulletin.form.label.text=Text
+
+anonymous.patonbulletin.form.button.create=Create your paton Bulletin
+anonymous.patonbulletin.form.button.return=Return

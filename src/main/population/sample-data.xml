@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+- sample-data.xml
+-
+- Copyright (c) 2019 Rafael Corchuelo.
+-
+- In keeping with the traditional purpose of furthering education and research, it is
+- the policy of the copyright owner to permit non-commercial use and redistribution of
+- this software. It has been tested carefully, but it is not guaranteed for any particular
+- purposes.  The copyright owner does not offer any warranties or representations, nor do
+- they accept any liabilities with respect to them.
+-->
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<import resource="conversion-service.xml" />
+	
+	<!-- Shouts -->
+	
+	<bean id="bulletin01" class="acme.entities.bulletins.Bulletin">
+		<property name="author" value="John Doe" />
+		<property name="text" value="I'm happy!" />
+		<property name="moment" value="2019/08/09 10:00" />
+	</bean>
+	
+	<bean id="bulletin02" class="acme.entities.bulletins.Bulletin">
+		<property name="author" value="Jane Doe" />
+		<property name="text" value="I'm the master of my room!" />
+		<property name="moment" value="2019/08/09 15:55" />
+	</bean>
+	
+	<bean id="bulletin03" class="acme.entities.bulletins.Bulletin">
+		<property name="author" value="Foo Bar" />
+		<property name="text" value="Just turning 20!" />
+		<property name="moment" value="2019/08/07 10:00" />
+	</bean>
+
+	 <!-- PatonBulletins -->
+	
+	<bean id="patonbulletin01" class="acme.entities.patonbulletins.Patonbulletin">
+		<property name="author" value="Miguel Paton" />
+		<property name="description" value="First!" />
+		<property name="text" value="First Bulletin!" />
+		<property name="moment" value="2019/08/09 10:00" />
+	</bean>
+	
+	<bean id="patonbulletin02" class="acme.entities.patonbulletins.Patonbulletin">
+		<property name="author" value="Alberto Paton" />
+		<property name="description" value="Second!" />
+		<property name="text" value="Second Bulletin!" />
+		<property name="moment" value="2019/08/09 15:00" />
+	</bean>
+	
+	<bean id="patonbulletin03" class="acme.entities.patonbulletins.Patonbulletin">
+		<property name="author" value="Juan Paton" />
+		<property name="description" value="Third!" />
+		<property name="text" value="Third Bulletin!" />
+		<property name="moment" value="2019/08/09 17:00" />
+	</bean>
+	
+	<!-- GamezBulletins -->
+
+	<bean id="gamezbulletin01" class="acme.entities.gamezbulletins.Gamezbulletin">
+		<property name="author" value="Carlos" />
+		<property name="age" value="21" />
+		<property name="text" value="Text 01" />
+		<property name="moment" value="2019/07/02 12:00" />
+	</bean>
+
+	<bean id="gamezbulletin02" class="acme.entities.gamezbulletins.Gamezbulletin">
+		<property name="author" value="Carlos Gamez" />
+		<property name="age" value="30" />
+		<property name="text" value="Text 02" />
+		<property name="moment" value="2018/02/12 12:00" />
+	</bean>
+
+	<bean id="gamezbulletin03" class="acme.entities.gamezbulletins.Gamezbulletin">
+		<property name="author" value="Carlos Gamez Ramirez" />
+		<property name="age" value="16" />
+		<property name="text" value="Text 03" />
+		<property name="moment" value="2017/01/06 12:00" />
+    </bean>
+	
+  	<!-- VillegasBulletins -->
+
+	<bean id="villegasbullet01" class="acme.entities.villegasBulletin.Villegasbulletin">
+		<property name="author" value="Albert Einstein" />
+		<property name="date" value="2019/10/20 14:30" />
+		<property name="title" value="Bees" />
+		<property name="text" value="If the bee disappeared off the face of the Earth, man would only have four years left to live." />
+	</bean>
+	
+	<bean id="villegasbullet02" class="acme.entities.villegasBulletin.Villegasbulletin">
+		<property name="author" value="Marie Curie" />
+		<property name="date" value="2019/10/20 14:32" />
+		<property name="title" value="Nada en la vida" />
+		<property name="text" value="Nada en la vida es para ser temido, es sólo para ser comprendido. Ahora es el momento de entender más, de modo que podamos temer menos" />
+	</bean>
+	
+	<bean id="villegasbullet03" class="acme.entities.villegasBulletin.Villegasbulletin">
+		<property name="author" value="Georg Lichtenberg" />
+		<property name="date" value="2019/10/20 14:33" />
+		<property name="title" value="Es extraño" />
+		<property name="text" value="Es extraño que sólo las personas extraordinarios hagan descubrimientos que luego aparecen de manera fácil y sencilla" />
+	</bean>
+</beans>
+
